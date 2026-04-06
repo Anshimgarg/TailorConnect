@@ -28,4 +28,4 @@ app.listen(5000,()=>{
     console.log("Server Started on :"+5000);
 })
 
-
+module.exports = app;
