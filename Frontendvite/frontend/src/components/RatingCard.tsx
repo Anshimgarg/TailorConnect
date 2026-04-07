@@ -9,7 +9,7 @@ export default function RatingCard({ customerEmail }: { customerEmail: string })
 
   const searchTailor = async () => {
     try {
-      const res = await axios.get(`http://localhost:5000/api/tailor/contact/${contact}`);
+      const res = await axios.get(`https://tailor-connect-backendreactmvc.vercel.app/api/tailor/contact/${contact}`);
       setFoundTailor(res.data);
     } catch (err) {
       alert("Tailor not found with this contact number");
@@ -20,7 +20,7 @@ export default function RatingCard({ customerEmail }: { customerEmail: string })
   const publishReview = async () => {
     if (stars === 0) return alert("Please select stars");
     try {
-      await axios.post("http://localhost:5000/api/tailor/rate", {
+      await axios.post("https://tailor-connect-backendreactmvc.vercel.app/api/tailor/rate", {
         tailorId: foundTailor._id,
         stars,
         review,

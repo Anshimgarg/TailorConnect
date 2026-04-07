@@ -2,7 +2,7 @@ import axios from "axios";
 
 const api = axios.create({
   // This ensures all calls start with your backend address and /api
-  baseURL: import.meta.env.VITE_API_URL || "http://localhost:5000/api",
+  baseURL: import.meta.env.VITE_API_URL || "https://tailor-connect-backendreactmvc.vercel.app/api",
 });
 
 // Attach JWT token to every request for authentication
