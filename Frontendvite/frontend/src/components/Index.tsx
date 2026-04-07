@@ -8,8 +8,9 @@ export default function Index(): JSX.Element {
 
   return (
     <div style={{ minHeight: "100vh", background: "#f5f0eb", fontFamily: "'Georgia', serif" }}>
-
-      {/* NAVBAR */}
+    
+    <Navbar />   {/* add this */}
+    {/* NAVBAR */}
       <nav style={{
         background: "#1a1a2e", color: "#fff", padding: "14px 32px",
         display: "flex", justifyContent: "space-between", alignItems: "center",
