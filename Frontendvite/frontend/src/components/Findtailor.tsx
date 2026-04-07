@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-const API = (import.meta.env.VITE_API_URL as string | undefined) || "https://tailor-connect-backendreactmvc.vercel.app/api/search";
-const WORK_API = (import.meta.env.VITE_API_URL as string | undefined) || "https://tailor-connect-backendreactmvc.vercel.app/api/work";
+const API = (import.meta.env.VITE_API_URL as string | undefined) || "https://tailor-connect-backend.onrender.com/api/search";
+const WORK_API = (import.meta.env.VITE_API_URL as string | undefined) || "https://tailor-connect-backend.onrender.com/api/work";
 const PAGE_SIZE = 6;
 
 
